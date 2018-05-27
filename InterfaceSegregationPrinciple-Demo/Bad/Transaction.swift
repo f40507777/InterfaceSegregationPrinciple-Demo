@@ -8,24 +8,24 @@
 
 import Foundation
 
-protocol Translation {
+protocol Transaction {
     static func Execute()
 }
 
-class DepositTransaction: Translation {
+class DepositTransaction: Transaction {
     static func Execute() {
         UI.RequestDepositAmount()
     }
 }
 
-class WithdrawalTransaction: Translation {
+class WithdrawalTransaction: Transaction {
     static func Execute() {
         UI.RequestWithdrawalAmount()
         UI.InformInsufficientFunds()
     }
 }
 
-class TransferTransaction: Translation {
+class TransferTransaction: Transaction {
     static func Execute() {
         UI.RequestTransferAmount()
     }
