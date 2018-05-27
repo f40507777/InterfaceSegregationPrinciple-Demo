@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class UI {
     static var showOnScreenText: String = ""
     
