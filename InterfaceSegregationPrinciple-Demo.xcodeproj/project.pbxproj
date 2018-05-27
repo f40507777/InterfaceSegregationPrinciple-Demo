@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B6A5703320BB29510008EAE6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5703220BB29510008EAE6 /* main.swift */; };
+		B6A5704620BB29AF0008EAE6 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704520BB29AF0008EAE6 /* UI.swift */; };
+		B6A5704820BB29BC0008EAE6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704720BB29BC0008EAE6 /* Transaction.swift */; };
+		B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704F20BB2A360008EAE6 /* TranscationOnScreen.swift */; };
+		B6A5705720BB2AE80008EAE6 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704520BB29AF0008EAE6 /* UI.swift */; };
+		B6A5705820BB2AEC0008EAE6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704720BB29BC0008EAE6 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,22 @@
 /* Begin PBXFileReference section */
 		B6A5702F20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "InterfaceSegregationPrinciple-Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A5703220BB29510008EAE6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B6A5704520BB29AF0008EAE6 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		B6A5704720BB29BC0008EAE6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B6A5704D20BB2A360008EAE6 /* TranscationOnScreen.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranscationOnScreen.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A5704F20BB2A360008EAE6 /* TranscationOnScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationOnScreen.swift; sourceTree = "<group>"; };
+		B6A5705120BB2A360008EAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B6A5702C20BB29510008EAE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A5704A20BB2A360008EAE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A5703120BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
+				B6A5704E20BB2A360008EAE6 /* TranscationOnScreen */,
 				B6A5703020BB29510008EAE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A5702F20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
+				B6A5704D20BB2A360008EAE6 /* TranscationOnScreen.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				B6A5703220BB29510008EAE6 /* main.swift */,
+				B6A5704520BB29AF0008EAE6 /* UI.swift */,
+				B6A5704720BB29BC0008EAE6 /* Transaction.swift */,
 			);
 			path = "InterfaceSegregationPrinciple-Demo";
+			sourceTree = "<group>";
+		};
+		B6A5704E20BB2A360008EAE6 /* TranscationOnScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5704F20BB2A360008EAE6 /* TranscationOnScreen.swift */,
+				B6A5705120BB2A360008EAE6 /* Info.plist */,
+			);
+			path = TranscationOnScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = B6A5702F20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */;
 			productType = "com.apple.product-type.tool";
 		};
+		B6A5704C20BB2A360008EAE6 /* TranscationOnScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A5705220BB2A360008EAE6 /* Build configuration list for PBXNativeTarget "TranscationOnScreen" */;
+			buildPhases = (
+				B6A5704920BB2A360008EAE6 /* Sources */,
+				B6A5704A20BB2A360008EAE6 /* Frameworks */,
+				B6A5704B20BB2A360008EAE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranscationOnScreen;
+			productName = TranscationOnScreen;
+			productReference = B6A5704D20BB2A360008EAE6 /* TranscationOnScreen.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +140,9 @@
 				ORGANIZATIONNAME = Finn;
 				TargetAttributes = {
 					B6A5702E20BB29510008EAE6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B6A5704C20BB2A360008EAE6 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -110,9 +160,20 @@
 			projectRoot = "";
 			targets = (
 				B6A5702E20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
+				B6A5704C20BB2A360008EAE6 /* TranscationOnScreen */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6A5704B20BB2A360008EAE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6A5702B20BB29510008EAE6 /* Sources */ = {
@@ -120,6 +181,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A5703320BB29510008EAE6 /* main.swift in Sources */,
+				B6A5704620BB29AF0008EAE6 /* UI.swift in Sources */,
+				B6A5704820BB29BC0008EAE6 /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A5704920BB2A360008EAE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */,
+				B6A5705720BB2AE80008EAE6 /* UI.swift in Sources */,
+				B6A5705820BB2AEC0008EAE6 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +332,42 @@
 			};
 			name = Release;
 		};
+		B6A5705320BB2A360008EAE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L8HLZFC48L;
+				INFOPLIST_FILE = TranscationOnScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Finn.TranscationOnScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B6A5705420BB2A360008EAE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L8HLZFC48L;
+				INFOPLIST_FILE = TranscationOnScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Finn.TranscationOnScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +385,15 @@
 			buildConfigurations = (
 				B6A5703720BB29510008EAE6 /* Debug */,
 				B6A5703820BB29510008EAE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A5705220BB2A360008EAE6 /* Build configuration list for PBXNativeTarget "TranscationOnScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A5705320BB2A360008EAE6 /* Debug */,
+				B6A5705420BB2A360008EAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
