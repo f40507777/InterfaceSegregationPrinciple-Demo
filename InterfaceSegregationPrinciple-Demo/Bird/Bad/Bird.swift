@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Bird {
+    
     var aciotnLog: String  { get }
     
     func eat()
@@ -18,9 +19,11 @@ protocol Bird {
     func playSomething()
     
     func fly()
+    
 }
 
 class Eagle: Bird {
+    
     var aciotnLog: String = "Eagle do nothing"
     
     func eat() {
@@ -32,6 +35,7 @@ class Eagle: Bird {
     }
     
     func playSomething() {
+        fatalError("Eagle no play!!")
     }
     
     func fly() {
@@ -41,6 +45,7 @@ class Eagle: Bird {
 }
 
 class Penguin: Bird {
+    
     var aciotnLog: String = "Penguin do nothing"
     
     func eat() {
@@ -56,6 +61,7 @@ class Penguin: Bird {
     }
     
     func fly() {
+        fatalError("Penguin cann't fly QQ")
     }
     
 }
