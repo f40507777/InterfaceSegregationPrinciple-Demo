@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60C16C020BFECA100379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
-		B60C16C120BFECA100379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
-		B60C16C220BFECA100379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
-		B60C16C320BFECA100379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
+		B60C16C420BFEEDC00379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704520BB29AF0008EAE6 /* UI.swift */; };
+		B60C16C520BFEEDC00379A7D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704720BB29BC0008EAE6 /* Transaction.swift */; };
+		B60C16C620BFEEDC00379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704520BB29AF0008EAE6 /* UI.swift */; };
+		B60C16C720BFEEDC00379A7D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704720BB29BC0008EAE6 /* Transaction.swift */; };
+		B60C16D120BFF33000379A7D /* BirdActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16D020BFF33000379A7D /* BirdActionTest.swift */; };
+		B60C16D920BFF37000379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16D820BFF37000379A7D /* Bird.swift */; };
+		B60C16DF20C003D700379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16DE20C003D700379A7D /* Bird.swift */; };
+		B60C16E020C003D700379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16DE20C003D700379A7D /* Bird.swift */; };
 		B6A5703320BB29510008EAE6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5703220BB29510008EAE6 /* main.swift */; };
 		B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704F20BB2A360008EAE6 /* TranscationOnScreen.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B60C16CE20BFF33000379A7D /* BirdActionTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdActionTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60C16D020BFF33000379A7D /* BirdActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdActionTest.swift; sourceTree = "<group>"; };
+		B60C16D220BFF33000379A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60C16D820BFF37000379A7D /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		B60C16DE20C003D700379A7D /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		B6A5702F20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "InterfaceSegregationPrinciple-Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A5703220BB29510008EAE6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B6A5704520BB29AF0008EAE6 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
@@ -40,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B60C16CB20BFF33000379A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6A5702C20BB29510008EAE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +73,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60C16C820BFF27300379A7D /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5705A20BB2EE30008EAE6 /* Good */,
+				B6A5705920BB2EC70008EAE6 /* Bad */,
+			);
+			path = ATM;
+			sourceTree = "<group>";
+		};
+		B60C16C920BFF2A300379A7D /* Bird */ = {
+			isa = PBXGroup;
+			children = (
+				B60C16D720BFF34700379A7D /* Good */,
+				B60C16D620BFF34100379A7D /* Bad */,
+			);
+			path = Bird;
+			sourceTree = "<group>";
+		};
+		B60C16CF20BFF33000379A7D /* BirdActionTest */ = {
+			isa = PBXGroup;
+			children = (
+				B60C16D020BFF33000379A7D /* BirdActionTest.swift */,
+				B60C16D220BFF33000379A7D /* Info.plist */,
+			);
+			path = BirdActionTest;
+			sourceTree = "<group>";
+		};
+		B60C16D620BFF34100379A7D /* Bad */ = {
+			isa = PBXGroup;
+			children = (
+				B60C16D820BFF37000379A7D /* Bird.swift */,
+			);
+			path = Bad;
+			sourceTree = "<group>";
+		};
+		B60C16D720BFF34700379A7D /* Good */ = {
+			isa = PBXGroup;
+			children = (
+				B60C16DE20C003D700379A7D /* Bird.swift */,
+			);
+			path = Good;
+			sourceTree = "<group>";
+		};
 		B6A5702620BB29510008EAE6 = {
 			isa = PBXGroup;
 			children = (
 				B6A5703120BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
 				B6A5704E20BB2A360008EAE6 /* TranscationOnScreen */,
+				B60C16CF20BFF33000379A7D /* BirdActionTest */,
 				B6A5703020BB29510008EAE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +131,7 @@
 			children = (
 				B6A5702F20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
 				B6A5704D20BB2A360008EAE6 /* TranscationOnScreen.xctest */,
+				B60C16CE20BFF33000379A7D /* BirdActionTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,8 +139,8 @@
 		B6A5703120BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B6A5705A20BB2EE30008EAE6 /* Good */,
-				B6A5705920BB2EC70008EAE6 /* Bad */,
+				B60C16C920BFF2A300379A7D /* Bird */,
+				B60C16C820BFF27300379A7D /* ATM */,
 				B6A5703220BB29510008EAE6 /* main.swift */,
 			);
 			path = "InterfaceSegregationPrinciple-Demo";
@@ -115,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B60C16CD20BFF33000379A7D /* BirdActionTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60C16D320BFF33000379A7D /* Build configuration list for PBXNativeTarget "BirdActionTest" */;
+			buildPhases = (
+				B60C16CA20BFF33000379A7D /* Sources */,
+				B60C16CB20BFF33000379A7D /* Frameworks */,
+				B60C16CC20BFF33000379A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdActionTest;
+			productName = BirdActionTest;
+			productReference = B60C16CE20BFF33000379A7D /* BirdActionTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B6A5702E20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6A5703620BB29510008EAE6 /* Build configuration list for PBXNativeTarget "InterfaceSegregationPrinciple-Demo" */;
@@ -159,6 +237,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Finn;
 				TargetAttributes = {
+					B60C16CD20BFF33000379A7D = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					B6A5702E20BB29510008EAE6 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -181,11 +262,19 @@
 			targets = (
 				B6A5702E20BB29510008EAE6 /* InterfaceSegregationPrinciple-Demo */,
 				B6A5704C20BB2A360008EAE6 /* TranscationOnScreen */,
+				B60C16CD20BFF33000379A7D /* BirdActionTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B60C16CC20BFF33000379A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6A5704B20BB2A360008EAE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,13 +285,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B60C16CA20BFF33000379A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60C16E020C003D700379A7D /* Bird.swift in Sources */,
+				B60C16D120BFF33000379A7D /* BirdActionTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6A5702B20BB29510008EAE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6A5703320BB29510008EAE6 /* main.swift in Sources */,
-				B60C16C020BFECA100379A7D /* UI.swift in Sources */,
-				B60C16C120BFECA100379A7D /* Translation.swift in Sources */,
+				B60C16DF20C003D700379A7D /* Bird.swift in Sources */,
+				B60C16C420BFEEDC00379A7D /* UI.swift in Sources */,
+				B60C16D920BFF37000379A7D /* Bird.swift in Sources */,
+				B60C16C520BFEEDC00379A7D /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,14 +311,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */,
-				B60C16C220BFECA100379A7D /* UI.swift in Sources */,
-				B60C16C320BFECA100379A7D /* Translation.swift in Sources */,
+				B60C16C620BFEEDC00379A7D /* UI.swift in Sources */,
+				B60C16C720BFEEDC00379A7D /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B60C16D420BFF33000379A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L8HLZFC48L;
+				INFOPLIST_FILE = BirdActionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Finn.BirdActionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B60C16D520BFF33000379A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L8HLZFC48L;
+				INFOPLIST_FILE = BirdActionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Finn.BirdActionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		B6A5703420BB29510008EAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B60C16D320BFF33000379A7D /* Build configuration list for PBXNativeTarget "BirdActionTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60C16D420BFF33000379A7D /* Debug */,
+				B60C16D520BFF33000379A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6A5702A20BB29510008EAE6 /* Build configuration list for PBXProject "InterfaceSegregationPrinciple-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
