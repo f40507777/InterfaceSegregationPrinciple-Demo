@@ -9,19 +9,19 @@
 import Foundation
 
 protocol RequestDepositAmountUI {
-    static func RequestDepositAmount()
+    static func requestDepositAmount()
 }
 
 protocol RequestWithdrawalAmountUI {
-    static func RequestWithdrawalAmount()
+    static func requestWithdrawalAmount()
 }
 
 protocol InformInsufficientFundsUI {
-    static func InformInsufficientFunds()
+    static func informInsufficientFunds()
 }
 
 protocol RequestTransferAmountUI {
-    static func RequestTransferAmount()
+    static func requestTransferAmount()
 }
 
 class UI {
@@ -30,24 +30,24 @@ class UI {
 
 
 class DeposiUI: UI, RequestDepositAmountUI {
-    static func RequestDepositAmount() {
+    static func requestDepositAmount() {
         showOnScreenText = "請輸入存款金額"
     }
 }
 
 class WithdrawalUI: UI, RequestWithdrawalAmountUI, InformInsufficientFundsUI {
     
-    static func RequestWithdrawalAmount() {
+    static func requestWithdrawalAmount() {
         showOnScreenText = "請輸入提款金額"
     }
     
-    static func InformInsufficientFunds() {
+    static func informInsufficientFunds() {
         showOnScreenText = "目前餘額不足"
     }
 }
 
 class TransferUI: UI, RequestTransferAmountUI {
-    static func RequestTransferAmount() {
+    static func requestTransferAmount() {
         showOnScreenText = "請輸入轉帳金額"
     }
 }

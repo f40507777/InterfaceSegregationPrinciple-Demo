@@ -11,19 +11,19 @@ import Foundation
 class UI {
     static var showOnScreenText: String = ""
     
-    class func RequestDepositAmount() {
+    class func requestDepositAmount() {
         showOnScreenText = "請輸入存款金額"
     }
     
-    class func RequestWithdrawalAmount() {
+    class func requestWithdrawalAmount() {
         showOnScreenText = "請輸入提款金額"
     }
     
-    class func RequestTransferAmount() {
+    class func requestTransferAmount() {
         showOnScreenText = "請輸入轉帳金額"
     }
     
-    class func InformInsufficientFunds() {
+    class func informInsufficientFunds() {
         showOnScreenText = "目前餘額不足"
     }
     

@@ -9,24 +9,24 @@
 import Foundation
 
 protocol Transaction {
-    static func Execute()
+    static func execute()
 }
 
 class DepositTransaction: Transaction {
-    static func Execute() {
-        UI.RequestDepositAmount()
+    static func execute() {
+        UI.requestDepositAmount()
     }
 }
 
 class WithdrawalTransaction: Transaction {
-    static func Execute() {
-        UI.RequestWithdrawalAmount()
-        UI.InformInsufficientFunds()
+    static func execute() {
+        UI.requestWithdrawalAmount()
+        UI.informInsufficientFunds()
     }
 }
 
 class TransferTransaction: Transaction {
-    static func Execute() {
-        UI.RequestTransferAmount()
+    static func execute() {
+        UI.requestTransferAmount()
     }
 }
