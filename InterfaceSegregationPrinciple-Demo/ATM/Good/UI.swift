@@ -21,26 +21,30 @@ protocol TransferlUI {
     func requestTransferAmount()
 }
 
-protocol UI: DepositUI, WithdrawalUI, TransferlUI {}
+protocol ATMUI: DepositUI, WithdrawalUI, TransferlUI {}
 
-class ScreenUI: UI {
-
+class ScreenUI {
     var showScreenText: String = ""
-    
+}
+
+extension ScreenUI: DepositUI {
     func requestDepositAmount() {
         showScreenText = "請輸入存款金額"
     }
-    
+}
+
+extension ScreenUI: WithdrawalUI {
     func requestWithdrawalAmount() {
         showScreenText = "請輸入提款金額"
     }
-
+    
     func informInsufficientFunds() {
         showScreenText = "目前餘額不足"
     }
-    
+}
+
+extension ScreenUI: TransferlUI {
     func requestTransferAmount() {
         showScreenText = "請輸入轉帳金額"
     }
-    
 }

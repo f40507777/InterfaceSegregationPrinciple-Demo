@@ -8,25 +8,26 @@
 
 import Foundation
 
+
 protocol Transaction {
     static func execute()
 }
 
 class DepositTransaction: Transaction {
     static func execute() {
-        UI.requestDepositAmount()
+        ScreenUI.requestDepositAmount()
     }
 }
 
 class WithdrawalTransaction: Transaction {
     static func execute() {
-        UI.requestWithdrawalAmount()
-        UI.informInsufficientFunds()
+        ScreenUI.RequestWithdrawalAmount()
+        ScreenUI.InformInsufficientFunds()
     }
 }
 
 class TransferTransaction: Transaction {
     static func execute() {
-        UI.requestTransferAmount()
+        ScreenUI.RequestTransferAmount()
     }
 }

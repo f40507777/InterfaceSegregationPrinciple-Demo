@@ -8,22 +8,31 @@
 
 import Foundation
 
-class UI {
-    static var showOnScreenText: String = ""
-    
-    class func requestDepositAmount() {
+protocol ATMUI {
+    func requestDepositAmount()
+    func requestWithdrawalAmount()
+    func requestTransferAmount()
+    func informInsufficientFunds()
+}
+
+class ScreenUI {
+    var showOnScreenText: String = ""
+}
+
+extension ScreenUI: ATMUI {
+    func requestDepositAmount() {
         showOnScreenText = "請輸入存款金額"
     }
     
-    class func requestWithdrawalAmount() {
+    func requestWithdrawalAmount() {
         showOnScreenText = "請輸入提款金額"
     }
     
-    class func requestTransferAmount() {
+    func requestTransferAmount() {
         showOnScreenText = "請輸入轉帳金額"
     }
     
-    class func informInsufficientFunds() {
+    func informInsufficientFunds() {
         showOnScreenText = "目前餘額不足"
     }
     

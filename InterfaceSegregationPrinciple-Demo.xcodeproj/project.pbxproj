@@ -11,10 +11,10 @@
 		B60C16D920BFF37000379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16D820BFF37000379A7D /* Bird.swift */; };
 		B60C16DF20C003D700379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16DE20C003D700379A7D /* Bird.swift */; };
 		B60C16E020C003D700379A7D /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C16DE20C003D700379A7D /* Bird.swift */; };
-		B60C16E120C4D06700379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
-		B60C16E220C4D06B00379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
-		B60C16E320C4D06D00379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
-		B60C16E420C4D06D00379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
+		B60C16E920C4DCED00379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
+		B60C16EA20C4DCED00379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
+		B60C16EB20C4DCEE00379A7D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5705E20BB2FC20008EAE6 /* UI.swift */; };
+		B60C16EC20C4DCEE00379A7D /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5706420BB37390008EAE6 /* Translation.swift */; };
 		B6A5703320BB29510008EAE6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5703220BB29510008EAE6 /* main.swift */; };
 		B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5704F20BB2A360008EAE6 /* TranscationOnScreen.swift */; };
 /* End PBXBuildFile section */
@@ -299,10 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A5703320BB29510008EAE6 /* main.swift in Sources */,
+				B60C16E920C4DCED00379A7D /* UI.swift in Sources */,
 				B60C16DF20C003D700379A7D /* Bird.swift in Sources */,
 				B60C16D920BFF37000379A7D /* Bird.swift in Sources */,
-				B60C16E220C4D06B00379A7D /* Translation.swift in Sources */,
-				B60C16E120C4D06700379A7D /* UI.swift in Sources */,
+				B60C16EA20C4DCED00379A7D /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A5705020BB2A360008EAE6 /* TranscationOnScreen.swift in Sources */,
-				B60C16E320C4D06D00379A7D /* UI.swift in Sources */,
-				B60C16E420C4D06D00379A7D /* Translation.swift in Sources */,
+				B60C16EB20C4DCEE00379A7D /* UI.swift in Sources */,
+				B60C16EC20C4DCEE00379A7D /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
