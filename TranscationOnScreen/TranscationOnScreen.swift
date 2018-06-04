@@ -10,19 +10,23 @@ import XCTest
 
 class TranscationOnScreen: XCTestCase {
     
-    func test_showTransferLog() {
-        DepositTransaction.execute()
-        XCTAssertEqual(UI.showOnScreenText, "請輸入存款金額")
+    var screenUI = ScreenUI()
+
+    func test_showDepositScreenUILog() {
+        DepositTransaction(depositUI: screenUI).execute()
+        
+        XCTAssertEqual(screenUI.showScreenText, "請輸入存款金額")
     }
     
-    func test_showWithdrawalLog() {
-        WithdrawalTransaction.execute()
-        XCTAssertEqual(UI.showOnScreenText, "目前餘額不足")
+    func test_showWithdrawalScreenUILog() {
+        WithdrawalTransaction(withdrawaUI: screenUI).execute()
+        
+        XCTAssertEqual(screenUI.showScreenText, "目前餘額不足")
     }
     
-    func test_showDepositLog() {
-        TransferTransaction.execute()
-        XCTAssertEqual(UI.showOnScreenText, "請輸入轉帳金額")
+    func test_showTransferScreenUILog() {
+        TransferTransaction(transferUI: screenUI).execute()
+        
+        XCTAssertEqual(screenUI.showScreenText, "請輸入轉帳金額")
     }
-    
 }

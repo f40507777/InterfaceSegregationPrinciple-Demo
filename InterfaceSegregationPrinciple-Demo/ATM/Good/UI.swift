@@ -8,47 +8,39 @@
 
 import Foundation
 
-protocol RequestDepositAmountUI {
-    static func requestDepositAmount()
+protocol DepositUI {
+    func requestDepositAmount()
 }
 
-protocol RequestWithdrawalAmountUI {
-    static func requestWithdrawalAmount()
+protocol WithdrawalUI {
+    func requestWithdrawalAmount()
+    func informInsufficientFunds()
 }
 
-protocol InformInsufficientFundsUI {
-    static func informInsufficientFunds()
+protocol TransferlUI {
+    func requestTransferAmount()
 }
 
-protocol RequestTransferAmountUI {
-    static func requestTransferAmount()
-}
+protocol UI: DepositUI, WithdrawalUI, TransferlUI {}
 
-class UI {
-    static var showOnScreenText: String = ""
-}
+class ScreenUI: UI {
 
-
-class DeposiUI: UI, RequestDepositAmountUI {
-    static func requestDepositAmount() {
-        showOnScreenText = "請輸入存款金額"
-    }
-}
-
-class WithdrawalUI: UI, RequestWithdrawalAmountUI, InformInsufficientFundsUI {
+    var showScreenText: String = ""
     
-    static func requestWithdrawalAmount() {
-        showOnScreenText = "請輸入提款金額"
+    func requestDepositAmount() {
+        showScreenText = "請輸入存款金額"
     }
     
-    static func informInsufficientFunds() {
-        showOnScreenText = "目前餘額不足"
+    func requestWithdrawalAmount() {
+        showScreenText = "請輸入提款金額"
     }
-}
 
-class TransferUI: UI, RequestTransferAmountUI {
-    static func requestTransferAmount() {
-        showOnScreenText = "請輸入轉帳金額"
+    func informInsufficientFunds() {
+        showScreenText = "目前餘額不足"
     }
+    
+    func requestTransferAmount() {
+        showScreenText = "請輸入轉帳金額"
+    }
+    
 }
-

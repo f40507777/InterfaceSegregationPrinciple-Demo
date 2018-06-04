@@ -9,24 +9,42 @@
 import Foundation
 
 protocol Transaction {
-    static func execute()
+    func execute()
 }
 
 class DepositTransaction: Transaction {
-    static func execute() {
-        DeposiUI.requestDepositAmount()
+    var depositUI: DepositUI
+
+    required init(depositUI: DepositUI) {
+        self.depositUI = depositUI
+    }
+    
+    func execute() {
+        depositUI.requestDepositAmount()
     }
 }
 
 class WithdrawalTransaction: Transaction {
-    static func execute() {
-        WithdrawalUI.requestWithdrawalAmount()
-        WithdrawalUI.informInsufficientFunds()
+    var withdrawaUI: WithdrawalUI
+    
+    required init(withdrawaUI: WithdrawalUI) {
+        self.withdrawaUI = withdrawaUI
+    }
+    
+    func execute() {
+        withdrawaUI.requestWithdrawalAmount()
+        withdrawaUI.informInsufficientFunds()
     }
 }
 
 class TransferTransaction: Transaction {
-    static func execute() {
-        TransferUI.requestTransferAmount()
+    var transferUI: TransferlUI
+    
+    required init(transferUI: TransferlUI) {
+        self.transferUI = transferUI
+    }
+    
+    func execute() {
+        transferUI.requestTransferAmount()
     }
 }
